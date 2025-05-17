@@ -1,3 +1,5 @@
+"use strict";
+
 const SideNavbar = (function () {
     /**
      * Initializes the side navbar by adding event listeners to the hamburger icon
