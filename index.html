@@ -37,6 +37,242 @@
 </head>
 
 <body>
+    <header class="l-header" id="l-header">
+        <nav class="l-navbar w-100 h-100 d-flex justify-content-center" id="l-navbar">
+            <div class="l-navbar__start px-3 py-4 d-flex flex-column justify-content-between align-items-start">
+                <ul class="l-navbar__start__top w-100 d-flex flex-column gap-2" role="list">
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100" id="navbar-search">
+                        search
+                    </li>
+
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100"
+                        id="navbar-categories">
+                        categories
+                    </li>
+
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100" id="navbar-area">
+                        area
+                    </li>
+
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100"
+                        id="navbar-ingredients">
+                        ingredients
+                    </li>
+
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100"
+                        id="navbar-contact-us">
+                        contact us
+                    </li>
+                </ul>
+
+                <div class="l-navbar__start__bottom">
+                    <ul class="l-navbar__start__list d-flex align-items-center gap-2 my-3" role="list">
+                        <li class="l-navbar__start__list__item">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <span class="visually-hidden">Facebook</span>
+
+                                <svg viewBox="0 0 24 24" fill="none" class="u-icon-svg-2"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
+                                            fill="var(--neutral-50)"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="l-navbar__start__list__item">
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <span class="visually-hidden">Twitter</span>
+
+                                <svg viewBox="0 -2 20 20" version="1.1" class="u-icon-svg-2"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    fill="var(--neutral-950)">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <title>Twitter</title>
+                                        <defs> </defs>
+                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Dribbble-Light-Preview"
+                                                transform="translate(-60.000000, -7521.000000)"
+                                                fill="var(--neutral-50)">
+                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                    <path
+                                                        d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                                                        id="twitter-[#154]"> </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="l-navbar__start__list__item">
+                            <a href="https://www.google.com/" target="_blank">
+                                <span class="visually-hidden">Google</span>
+
+                                <svg viewBox="0 0 24 24" fill="none" class="u-icon-svg-2"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path
+                                            d="M7.64859 20.9098C7.61859 20.9098 7.57859 20.9298 7.54859 20.9298C5.60859 19.9698 4.02859 18.3798 3.05859 16.4398C3.05859 16.4098 3.07859 16.3698 3.07859 16.3398C4.29859 16.6998 5.55859 16.9698 6.80859 17.1798C7.02859 18.4398 7.28859 19.6898 7.64859 20.9098Z"
+                                            fill="var(--neutral-50)"></path>
+                                        <path
+                                            d="M20.9391 16.4498C19.9491 18.4398 18.2991 20.0498 16.2891 21.0198C16.6691 19.7498 16.9891 18.4698 17.1991 17.1798C18.4591 16.9698 19.6991 16.6998 20.9191 16.3398C20.9091 16.3798 20.9391 16.4198 20.9391 16.4498Z"
+                                            fill="var(--neutral-50)"></path>
+                                        <path
+                                            d="M21.0191 7.71047C19.7591 7.33047 18.4891 7.02047 17.1991 6.80047C16.9891 5.51047 16.6791 4.23047 16.2891 2.98047C18.3591 3.97047 20.0291 5.64047 21.0191 7.71047Z"
+                                            fill="var(--neutral-50)"></path>
+                                        <path
+                                            d="M7.65047 3.08859C7.29047 4.30859 7.03047 5.54859 6.82047 6.80859C5.53047 7.00859 4.25047 7.32859 2.98047 7.70859C3.95047 5.69859 5.56047 4.04859 7.55047 3.05859C7.58047 3.05859 7.62047 3.08859 7.65047 3.08859Z"
+                                            fill="var(--neutral-50)"></path>
+                                        <path
+                                            d="M15.4917 6.59C13.1717 6.33 10.8317 6.33 8.51172 6.59C8.76172 5.22 9.08172 3.85 9.53172 2.53C9.55172 2.45 9.54172 2.39 9.55172 2.31C10.3417 2.12 11.1517 2 12.0017 2C12.8417 2 13.6617 2.12 14.4417 2.31C14.4517 2.39 14.4517 2.45 14.4717 2.53C14.9217 3.86 15.2417 5.22 15.4917 6.59Z"
+                                            fill="var(--neutral-50)"></path>
+                                        <path
+                                            d="M6.59 15.4917C5.21 15.2417 3.85 14.9217 2.53 14.4717C2.45 14.4517 2.39 14.4617 2.31 14.4517C2.12 13.6617 2 12.8517 2 12.0017C2 11.1617 2.12 10.3417 2.31 9.56172C2.39 9.55172 2.45 9.55172 2.53 9.53172C3.86 9.09172 5.21 8.76172 6.59 8.51172C6.34 10.8317 6.34 13.1717 6.59 15.4917Z"
+                                            fill="var(--neutral-50)"></path>
+                                        <path
+                                            d="M22.0002 12.0017C22.0002 12.8517 21.8802 13.6617 21.6902 14.4517C21.6102 14.4617 21.5502 14.4517 21.4702 14.4717C20.1402 14.9117 18.7802 15.2417 17.4102 15.4917C17.6702 13.1717 17.6702 10.8317 17.4102 8.51172C18.7802 8.76172 20.1502 9.08172 21.4702 9.53172C21.5502 9.55172 21.6102 9.56172 21.6902 9.56172C21.8802 10.3517 22.0002 11.1617 22.0002 12.0017Z"
+                                            fill="var(--neutral-50)"></path>
+                                        <path
+                                            d="M15.4917 17.4102C15.2417 18.7902 14.9217 20.1502 14.4717 21.4702C14.4517 21.5502 14.4517 21.6102 14.4417 21.6902C13.6617 21.8802 12.8417 22.0002 12.0017 22.0002C11.1517 22.0002 10.3417 21.8802 9.55172 21.6902C9.54172 21.6102 9.55172 21.5502 9.53172 21.4702C9.09172 20.1402 8.76172 18.7902 8.51172 17.4102C9.67172 17.5402 10.8317 17.6302 12.0017 17.6302C13.1717 17.6302 14.3417 17.5402 15.4917 17.4102Z"
+                                            fill="var(--neutral-50)"></path>
+                                        <path
+                                            d="M15.7633 15.7633C13.2622 16.0789 10.7378 16.0789 8.23667 15.7633C7.92111 13.2622 7.92111 10.7378 8.23667 8.23667C10.7378 7.92111 13.2622 7.92111 15.7633 8.23667C16.0789 10.7378 16.0789 13.2622 15.7633 15.7633Z"
+                                            fill="var(--neutral-50)"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+
+            <div class="l-navbar__end px-3 py-4 d-flex flex-column justify-content-between align-items-center">
+                <a href="./index.html" class="l-navbar__logo">
+                    <img src="./assets/images/logo.png" alt="logo image" />
+                </a>
+
+                <ul class="l-navbar__toggler" role="list">
+                    <li class="l-navbar__toggler__item u-cursor-pointer" id="l-navbar-hamburger-icon">
+                        <svg viewBox="0 0 24 24" version="1.1" class="u-icon-svg" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" fill="var(--neutral-950)">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>Hamburger Menu</title>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Menu">
+                                        <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24">
+                                        </rect>
+                                        <line x1="5" y1="7" x2="19" y2="7" id="line-1" stroke="var(--neutral-950)"
+                                            stroke-width="2" stroke-linecap="round"></line>
+                                        <line x1="5" y1="12" x2="19" y2="12" id="line-2" stroke="var(--neutral-950)"
+                                            stroke-width="2" stroke-linecap="round"></line>
+                                        <line x1="5" y1="17" x2="19" y2="17" id="line-3" stroke="var(--neutral-950)"
+                                            stroke-width="2" stroke-linecap="round"></line>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+
+                    <li class="l-navbar__toggler__item u-cursor-pointer d-none" id="l-navbar-x-icon">
+                        <svg viewBox="0 0 24 24" class="u-icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g stroke="var(--neutral-950)" stroke-linecap="round" stroke-width="2">
+                                    <path d="M6 18L18 6"></path>
+                                    <path d="M18 18L6 6"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </li>
+                </ul>
+
+                <ul class="l-navbar__end__list d-flex flex-column gap-3" role="list">
+                    <li class="l-navbar__end__list__item">
+                        <a href="./index.html" class="l-navbar__end__list__item__link">
+                            <span class="visually-hidden">World Icon</span>
+
+                            <svg fill="var(--neutral-950)" class="u-icon-svg-3" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512 512" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M377.683,269.154c-1.317,35.549-7.812,71.064-19.091,103.964h125.239c16.254-31.584,26.185-66.635,28.082-103.964H377.683 z">
+                                    </path>
+                                    <path
+                                        d="M28.169,138.869C11.915,170.453,1.985,205.504,0.087,242.833h134.208c1.274-35.511,7.826-71.064,19.253-103.964H28.169z">
+                                    </path>
+                                    <path
+                                        d="M134.308,269.154H0.088c1.898,37.33,11.828,72.38,28.082,103.964h125.051 C142.109,340.218,135.607,305.406,134.308,269.154z">
+                                    </path>
+                                    <path
+                                        d="M483.83,138.869H358.997c11.048,32.9,17.49,67.74,18.722,103.964h134.193C510.014,205.504,500.084,170.453,483.83,138.869 z">
+                                    </path>
+                                    <path
+                                        d="M43.82,112.549h119.996c0.562-1.316,1.103-2.612,1.681-3.886C185.133,65.355,213.122,27.839,246.48,0 C162.256,3.093,88.278,46.748,43.82,112.549z">
+                                    </path>
+                                    <path
+                                        d="M163.401,399.438H43.82C88.428,465.238,162.756,509.175,247.334,512C211.431,482.961,182.868,444.182,163.401,399.438z">
+                                    </path>
+                                    <path
+                                        d="M348.445,399.438c-0.494,1.316-0.967,2.331-1.473,3.465c-19.491,43.664-47.325,81.312-80.537,109.049 c83.845-3.377,157.448-46.714,201.745-112.515H348.445z">
+                                    </path>
+                                    <path
+                                        d="M265.573,0.021c35.645,29.1,63.996,67.784,83.31,112.528h119.299C423.732,46.748,349.776,3.131,265.573,0.021z">
+                                    </path>
+                                    <path
+                                        d="M160.641,269.154c1.403,36.519,8.463,72.38,20.476,103.964H330.54c12.124-32.9,19.354-67.911,20.809-103.964H160.641z">
+                                    </path>
+                                    <path
+                                        d="M256.113,26.487c-25.742,23.305-47.172,53.161-63.191,86.062h127.109C304.062,79.649,282.446,49.774,256.113,26.487z">
+                                    </path>
+                                    <path
+                                        d="M331.125,138.869H181.675c-12.313,32.9-19.628,67.995-21.04,103.964h190.751 C350.055,206.347,343.066,171.769,331.125,138.869z">
+                                    </path>
+                                    <path
+                                        d="M192.282,399.439c16.107,32.899,37.896,62.847,64.436,86.092c25.559-23.183,46.831-53.192,62.718-86.092H192.282z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="l-navbar__end__list__item">
+                        <a href="./recipes.html" class="l-navbar__end__list__item__link">
+                            <span class="visually-hidden">Share</span>
+
+                            <svg viewBox="0 0 16 16" fill="none" class="u-icon-svg-3"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M11 6C12.6569 6 14 4.65685 14 3C14 1.34315 12.6569 0 11 0C9.34315 0 8 1.34315 8 3C8 3.22371 8.02449 3.44169 8.07092 3.65143L4.86861 5.65287C4.35599 5.24423 3.70652 5 3 5C1.34315 5 0 6.34315 0 8C0 9.65685 1.34315 11 3 11C3.70652 11 4.35599 10.7558 4.86861 10.3471L8.07092 12.3486C8.02449 12.5583 8 12.7763 8 13C8 14.6569 9.34315 16 11 16C12.6569 16 14 14.6569 14 13C14 11.3431 12.6569 10 11 10C10.2935 10 9.644 10.2442 9.13139 10.6529L5.92908 8.65143C5.97551 8.44169 6 8.22371 6 8C6 7.77629 5.97551 7.55831 5.92908 7.34857L9.13139 5.34713C9.644 5.75577 10.2935 6 11 6Z"
+                                        fill="var(--neutral-950)"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 </body>
 
