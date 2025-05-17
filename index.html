@@ -42,27 +42,29 @@
     <header class="l-header" id="l-header">
         <nav class="l-navbar w-100 h-100 d-flex justify-content-center" id="l-navbar">
             <div class="l-navbar__start px-3 py-4 d-flex flex-column justify-content-between align-items-start">
-                <ul class="l-navbar__start__top w-100 d-flex flex-column gap-2" role="list">
-                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100" id="navbar-search">
+                <ul class="l-navbar__start__top w-100 d-flex flex-column gap-3" role="list" id="navbar-start">
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100 position-relative"
+                        id="navbar-search" data-section="search" data-delay-time="0.15s">
                         search
                     </li>
 
-                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100"
-                        id="navbar-categories">
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100 position-relative"
+                        id="navbar-categories" data-section="categories" data-delay-time="0.2s">
                         categories
                     </li>
 
-                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100" id="navbar-area">
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100 position-relative"
+                        id="navbar-area" data-section="area" data-delay-time="0.25s">
                         area
                     </li>
 
-                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100"
-                        id="navbar-ingredients">
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100 position-relative"
+                        id="navbar-ingredients" data-section="ingredients" data-delay-time="0.3s">
                         ingredients
                     </li>
 
-                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100"
-                        id="navbar-contact-us">
+                    <li class="l-navbar__start__item text-capitalize u-cursor-pointer d-flex w-100 position-relative"
+                        id="navbar-contact-us" data-section="contact-us" data-delay-time="0.35s">
                         contact us
                     </li>
                 </ul>
@@ -277,7 +279,13 @@
     </header>
 
     <main class="l-main" id="l-main">
-        <section class="p-contact-us min-vh-100 d-flex justify-content-center align-items-center">
+        <section id="search"></section>
+        <section id="categories"></section>
+        <section id="area"></section>
+        <section id="ingredients"></section>
+
+        <section class="p-contact-us min-vh-100 d-flex justify-content-center align-items-center d-none"
+            id="contact-us">
             <header class="p-contact-us__header">
                 <h2 class="p-contact-us__title visually-hidden">contact us</h2>
             </header>
@@ -354,7 +362,8 @@
                 </div>
 
                 <div class="w-100 d-flex justify-content-center mt-3">
-                    <button type="button" class="btn btn-outline-danger text-capitalize" id="contact-submit" disabled>submit</button>
+                    <button type="button" class="btn btn-outline-danger text-capitalize" id="contact-submit"
+                        disabled>submit</button>
                 </div>
             </div>
         </section>
