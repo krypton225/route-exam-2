@@ -1,3 +1,5 @@
+"use strict";
+
 const Loader = (function () {
     const loader = document.getElementById("loader");
 
