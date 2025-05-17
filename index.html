@@ -276,6 +276,90 @@
         </nav>
     </header>
 
+    <main class="l-main" id="l-main">
+        <section class="p-contact-us min-vh-100 d-flex justify-content-center align-items-center">
+            <header class="p-contact-us__header">
+                <h2 class="p-contact-us__title visually-hidden">contact us</h2>
+            </header>
+
+            <div class="p-contact-us__content w-100">
+                <div class="row g-3 w-100 mx-auto" id="p-contact-us-row">
+                    <div class="col-md-6" id="contact-name-container">
+                        <label for="name" class="form-label text-capitalize visually-hidden">name</label>
+
+                        <input type="text" class="form-control" id="contact-name" placeholder="Enter your name"
+                            autocomplete="off" />
+
+                        <div class="alert alert-danger mt-4 d-none" role="alert" id="contact-alert-name">
+                            Special characters and numbers not allowed!
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="contact-email-container">
+                        <label for="email" class="form-label text-capitalize visually-hidden">email</label>
+
+                        <input type="email" class="form-control" id="contact-email" placeholder="Enter your email"
+                            autocomplete="off" />
+
+                        <div class="alert alert-danger mt-4 d-none" role="alert" id="contact-alert-email">
+                            Email not valid *exemple@yyy.zzz
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="contact-phone-container">
+                        <label for="phone" class="form-label text-capitalize visually-hidden">phone</label>
+
+                        <input type="text" class="form-control" id="contact-phone" placeholder="Enter your phone"
+                            autocomplete="off" maxlength="11" />
+
+                        <div class="alert alert-danger mt-4 d-none" role="alert" id="contact-alert-phone">
+                            Enter valid Phone Number
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="contact-age-container">
+                        <label for="age" class="form-label text-capitalize visually-hidden">age</label>
+
+                        <input type="number" class="form-control" id="contact-age" placeholder="Enter your age"
+                            autocomplete="off" />
+
+                        <div class="alert alert-danger mt-4 d-none" role="alert" id="contact-alert-age">
+                            Enter valid age!
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="contact-password-container">
+                        <label for="password" class="form-label text-capitalize visually-hidden">password</label>
+
+                        <input type="password" class="form-control" id="contact-password"
+                            placeholder="Enter your password" autocomplete="off" />
+
+                        <div class="alert alert-danger mt-4 d-none" role="alert" id="contact-alert-password">
+                            Enter valid password *Minimum eight characters, at least one letter and one number:*
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" id="contact-re-password-container">
+                        <label for="re-password" class="form-label text-capitalize visually-hidden">
+                            Rewrite password
+                        </label>
+
+                        <input type="password" class="form-control" id="re-password" placeholder="Rewrite password"
+                            autocomplete="off" />
+
+                        <div class="alert alert-danger mt-4 d-none" role="alert" id="contact-alert-re-password">
+                            Enter valid re-password!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-outline-danger text-capitalize" id="contact-submit" disabled>submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 
 </html>
