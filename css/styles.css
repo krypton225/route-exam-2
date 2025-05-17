@@ -91,6 +91,8 @@ ul[role="list"] {
     align-items: center;
 
     font-size: 0.525rem;
+
+    background-color: var(--neutral-950);
     color: var(--neutral-50);
 
     animation: loader-animation 1.3s infinite linear;
