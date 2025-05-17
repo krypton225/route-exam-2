@@ -3,6 +3,13 @@
 import Validator from "./validators.js";
 
 const ContactUs = (function () {
+    /**
+     * Initializes the contact form by setting up event listeners for input validation
+     * and form submission. Attaches input event handlers to various form fields 
+     * including name, email, phone, age, password, and re-password inputs to validate
+     * their respective values. Additionally, sets up a click event handler for the
+     * submit button to handle form submission.
+     */
     function init() {
         const nameInput = document.getElementById("contact-name");
         const emailInput = document.getElementById("contact-email");
@@ -21,6 +28,13 @@ const ContactUs = (function () {
         contactSubmit.addEventListener("click", contactSubmitHandler);
     }
 
+    /**
+     * Validates a given input value and updates the corresponding input field's alert.
+     * @param {string} alertInputID - The ID of the input field's alert element.
+     * @param {string} type - The type of the input field being validated. Can be one of
+     * "name", "email", "phone", "age", or "password".
+     * @param {string} value - The value of the input field being validated.
+     */
     function validateInput(alertInputID, type, value) {
         const alertOfInput = document.getElementById(alertInputID);
         let isValidInput;
@@ -50,6 +64,10 @@ const ContactUs = (function () {
         }
     }
 
+    /**
+     * Validates all input fields and enables the submit button if all inputs are valid.
+     * Disable the submit button if any of the input fields are invalid.
+     */
     function validateAllInputs() {
         const nameInputValue = document.getElementById("contact-name").value;
         const emailInputValue = document.getElementById("contact-email").value;
@@ -77,6 +95,12 @@ const ContactUs = (function () {
         }
     }
 
+    /**
+     * Handles input event on the name input field. Validates the input value and updates
+     * the corresponding input field's alert element. Also, validates all input fields and
+     * enables the submit button if all inputs are valid.
+     * @param {Event} event - The input event object.
+     */
     function nameInputHandler(event) {
         const currentValue = event.target.value;
 
@@ -85,6 +109,12 @@ const ContactUs = (function () {
         validateAllInputs();
     }
 
+    /**
+     * Handles input event on the email input field. Validates the input value and updates
+     * the corresponding input field's alert element. Also, validates all input fields and
+     * enables the submit button if all inputs are valid.
+     * @param {Event} event - The input event object.
+     */
     function emailInputHandler(event) {
         const currentValue = event.target.value;
 
@@ -93,6 +123,12 @@ const ContactUs = (function () {
         validateAllInputs();
     }
 
+    /**
+     * Handles input event on the phone input field. Validates the input value and updates
+     * the corresponding input field's alert element. Also, validates all input fields and
+     * enables the submit button if all inputs are valid.
+     * @param {Event} event - The input event object.
+     */
     function phoneInputHandler(event) {
         const currentValue = event.target.value;
 
@@ -101,6 +137,12 @@ const ContactUs = (function () {
         validateAllInputs();
     }
 
+    /**
+     * Handles input event on the age input field. Validates the input value and updates
+     * the corresponding input field's alert element. Also, validates all input fields and
+     * enables the submit button if all inputs are valid.
+     * @param {Event} event - The input event object.
+     */
     function ageInputHandler(event) {
         const currentValue = event.target.value;
 
@@ -109,6 +151,12 @@ const ContactUs = (function () {
         validateAllInputs();
     }
 
+    /**
+     * Handles input event on the password input field. Validates the input value and
+     * updates the corresponding input field's alert element. Also, validates all input
+     * fields and enables the submit button if all inputs are valid.
+     * @param {Event} event - The input event object.
+     */
     function passwordInputHandler(event) {
         const currentValue = event.target.value;
 
@@ -117,6 +165,13 @@ const ContactUs = (function () {
         validateAllInputs();
     }
 
+    /**
+     * Handles input event on the re-password input field. Compares the re-password
+     * input value with the password input value to ensure they match. Updates the
+     * corresponding input field's alert element based on the match result. Also,
+     * validates all input fields and enables the submit button if all inputs are valid.
+     * @param {Event} event - The input event object.
+     */
     function rePasswordInputHandler(event) {
         const passwordInputValue = document.getElementById("contact-password").value;
         const currentValue = event.target.value;
@@ -138,6 +193,11 @@ const ContactUs = (function () {
         validateAllInputs();
     }
 
+    /**
+     * Handles the click event on the contact form's submit button. Validates all
+     * input fields and enables the submit button if all inputs are valid.
+     * @param {Event} event - The click event object.
+     */
     function contactSubmitHandler(event) {
         validateAllInputs();
     }
