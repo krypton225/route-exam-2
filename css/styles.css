@@ -86,6 +86,11 @@ ul[role="list"] {
     inline-size: 1.25rem;
 }
 
+.form-control::placeholder {
+    color: rgb(108, 117, 125);
+    opacity: 1;
+}
+
 .loader {
     inline-size: 1em;
     block-size: 1em;
@@ -223,6 +228,10 @@ ul[role="list"] {
 
         transition: inset-block-start 0.35s ease-in-out;
     }
+}
+
+.search:not(.d-none) + .intro {
+    display: flex !important;
 }
 
 .p-contact-us {
