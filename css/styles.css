@@ -171,6 +171,60 @@ ul[role="list"] {
     padding-inline: 1.5rem;
 }
 
+.c-card-meal {
+    inline-size: 100%;
+
+    border-radius: 0.25rem;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    @media (hover: hover) {
+        &:hover {
+            .c-card-meal__overlay {
+                inset-block-start: 0;
+            }
+        }
+    }
+
+    .c-card-meal__img {
+        inline-size: 100%;
+        block-size: 100%;
+
+        object-fit: cover;
+    }
+
+    .c-card-meal__overlay {
+        inline-size: 100%;
+        block-size: 100%;
+
+        padding-inline-start: 0.5rem;
+
+        position: absolute;
+        inset-inline: 0;
+        inset-block-start: 100%;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        font-size: 1.25rem;
+        font-weight: 500;
+
+        background-color: #f9f6f6ca;
+        color: #000;
+
+        transition: inset-block-start 0.35s ease-in-out;
+    }
+}
+
 .p-contact-us {
     .p-contact-us__content {
         max-inline-size: 60rem;
