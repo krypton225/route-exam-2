@@ -279,7 +279,38 @@
     </header>
 
     <main class="l-main" id="l-main">
-        <section id="intro">
+        <section class="search pt-5 py-2 d-none" id="search">
+            <header class="search__header">
+                <h2 class="search__title visually-hidden">Search</h2>
+            </header>
+
+            <div class="search__content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="search-by-name" class="form-label visually-hidden">Search By Name</label>
+                            <input type="text" class="form-control bg-transparent text-white" id="search-by-name"
+                                placeholder="Search By Name" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="search-first-letter" class="form-label visually-hidden">Search By First
+                                Letter</label>
+                            <input type="text" class="form-control bg-transparent text-white" id="search-first-letter"
+                                placeholder="Search By First Letter" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="intro" id="intro">
             <header class="intro__header">
                 <h2 class="visually-hidden">Intro section</h2>
             </header>
@@ -292,8 +323,6 @@
                 <div class="row g-4" id="row-details-intro-data"></div>
             </div>
         </section>
-
-        <section id="search"></section>
 
         <section id="categories"></section>
 
