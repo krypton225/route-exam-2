@@ -323,8 +323,26 @@
                 <div class="row g-4" id="row-details-intro-data"></div>
             </div>
         </section>
-
-        <section id="categories"></section>
+        
+        <section class="categories" id="categories">
+            <header class="categories__header visually-hidden">
+                <h2 class="categories__title">Categories</h2>
+            </header>
+            
+            <div class="categories__content py-5">
+                <div class="loader d-none" id="categories-loader"></div>
+                
+                <div class="row g-3" id="categories-row"></div>
+                
+                <div class="row g-3" id="categories-content-row">
+                    <div class="loader d-none" id="categories-content-row-loader"></div>
+                </div>
+                
+                <div class="row g-4 d-none" id="row-categories-data">
+                    <div class="loader d-none" id="row-categories-data-loader"></div>
+                </div>
+            </div>
+        </section>
 
         <section id="area"></section>
 
