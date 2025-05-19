@@ -1,5 +1,7 @@
 "use strict";
 
+import Categories from "./categories.js";
+
 const SideNavbar = (function () {
     /**
      * Initializes the side navbar.
@@ -133,7 +135,13 @@ const SideNavbar = (function () {
 
             const allSections = main.querySelectorAll("section");
 
-            allSections.forEach(section => section.classList.add("d-none"));
+            allSections.forEach(section => {
+                section.classList.add("d-none");
+
+                if (section.classList.contains(`categories`)) {
+                    Categories.init();
+                }
+            });
 
             document.getElementById(sectionName).classList.remove("d-none");
 
