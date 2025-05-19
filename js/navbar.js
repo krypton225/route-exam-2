@@ -1,5 +1,6 @@
 "use strict";
 
+import Area from "./area.js";
 import Categories from "./categories.js";
 
 const SideNavbar = (function () {
@@ -140,6 +141,8 @@ const SideNavbar = (function () {
 
                 if (section.classList.contains(`categories`)) {
                     Categories.init();
+                } else if (section.classList.contains(`area`)) {
+                    Area.init();
                 }
             });
 
