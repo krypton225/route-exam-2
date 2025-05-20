@@ -2,6 +2,7 @@
 
 import Area from "./area.js";
 import Categories from "./categories.js";
+import Ingredients from "./ingredients.js";
 
 const SideNavbar = (function () {
     /**
@@ -143,6 +144,8 @@ const SideNavbar = (function () {
                     Categories.init();
                 } else if (section.classList.contains(`area`)) {
                     Area.init();
+                } else if (section.classList.contains(`ingredients`)) {
+                    Ingredients.init();
                 }
             });
 
