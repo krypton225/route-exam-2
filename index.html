@@ -362,7 +362,23 @@
             </div>
         </section>
 
-        <section id="ingredients"></section>
+        <section class="ingredients" id="ingredients">
+            <header class="ingredients__header visually-hidden">
+                <h2 class="ingredients__title">ingredients</h2>
+            </header>
+
+            <div class="ingredients__content py-5">
+                <div class="loader d-none" id="ingredients-loader"></div>
+
+                <div class="row g-3" id="ingredients-countries"></div>
+
+                <div class="loader d-none" id="ingredients-content-row-loader"></div>
+                <div class="row g-3" id="ingredients-content-row"></div>
+
+                <div class="loader d-none" id="row-ingredients-meals-loader"></div>
+                <div class="row g-4 d-none" id="row-ingredients-meals"></div>
+            </div>
+        </section>
 
         <section class="p-contact-us min-vh-100 d-flex justify-content-center align-items-center d-none"
             id="contact-us">
